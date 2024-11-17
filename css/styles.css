@@ -50,12 +50,13 @@ img {
   display: flex;
   justify-content: space-between;
   width: 1158px;
-  margin: 0 auto;   
-   }
+  margin: 0 auto;  
+  padding: 0 15px; 
+}
+
 
 .container-contact {
-  display: flex;
-  padding: 0 15px;
+  display: flex; 
 }
 
  .contact-menu {
@@ -63,7 +64,6 @@ img {
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
-
 }
 
 .logo {
@@ -266,6 +266,9 @@ display: none;
 }
 
 .down {
+ display: flex;
+ box-sizing: border-box;
+
   background-color: #2e2f42;
   color: #f4f4fd;
   padding-top: 100px;
@@ -273,21 +276,32 @@ display: none;
   padding-left: 0;
 }
 
-.container-down {
+
+.container:last-child { 
+  display: flex;
   box-sizing: border-box;
   width: 1158px;
-  margin: 0 auto;
+  margin: 0 auto;  
+  padding: 0 15px;
 }
 
-.down .logo {
+.logo-down {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+  text-transform: uppercase;
   display: inline-block;
   margin-bottom: 16px;
 }
 
-.down .accent {
+.logo-down .accent {
   color: #f4f4fd;
 }
 
 .down-descr {
   max-width: 264px;
+
 }
