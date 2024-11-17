@@ -46,20 +46,24 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.container-contact { 
+.container { 
   display: flex;
   justify-content: space-between;
   width: 1158px;
-  margin: 0 auto; 
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin: 0 auto;   
    }
+
+.container-contact {
+  display: flex;
+  padding: 0 15px;
+}
 
  .contact-menu {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 15px;
   gap: 40px;
+  align-items: center;
+
 }
 
 .logo {
@@ -81,6 +85,8 @@ img {
 .menu {
   font-weight: 500;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
  }
 
 .menu:hover,
