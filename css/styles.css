@@ -47,14 +47,21 @@ img {
   align-items: flex-start;
   background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  padding: 0 15px;
+}
+
+.container {
+  display: flex;
+
+  width: 1158px;
+  margin: 0 auto;
 }
 
 .container-contact {
   display: flex;
   flex-wrap: wrap;
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo {
@@ -83,8 +90,6 @@ img {
   font-style: normal;
   align-items: center;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .contact-link {
@@ -106,10 +111,9 @@ img {
 .container-hero-image {
   display: flex;
   flex-direction: column;
-  width: 1158px;
   max-width: 496px;
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
 }
 
 .hero-image {
@@ -151,13 +155,6 @@ img {
   background-color: #404bbf;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 1158px;
-  margin: 0 auto;
-}
-
 .title {
   color: #2e2f42;
   font-weight: 700;
@@ -170,17 +167,27 @@ img {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
 }
 
 .future-list {
   display: flex;
   gap: 24px;
+  padding: 0;
 }
 
-.future-list-mark {
+.wrapper {
   flex-basis: calc((100% - 72px) / 4);
-  padding: 0;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
 }
 
 .cards {
@@ -190,13 +197,12 @@ img {
 .content {
   display: flex;
   gap: 24px;
+  padding: 0;
 }
 
 .content-mark {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  flex-basis: calc((100% - 72px) / 4);
-  padding: 0;
 }
 
 .content-mark-descr {
@@ -209,11 +215,11 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  padding: 0;
 }
 
-.apps-list {
+.wrapper-row {
   flex-basis: calc((100% - 48px) / 3);
-  padding: 0;
 }
 
 .apps-list-descr {
@@ -233,15 +239,6 @@ img {
   margin-bottom: 8px;
 }
 
-.container-down {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-
-  width: 1158px;
-  margin: 0 auto;
-}
-
 .down {
   background-color: #2e2f42;
   color: #f4f4fd;
@@ -251,6 +248,7 @@ img {
 }
 
 .down .logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
 
