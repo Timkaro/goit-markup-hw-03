@@ -237,7 +237,7 @@ img {
   row-gap: 48px;
 }
 
-.apps-list {
+.apps .apps-list {
   width: calc((100% - 48px) / 3);
 }
 
