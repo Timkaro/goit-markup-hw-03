@@ -110,16 +110,11 @@ img {
   padding-bottom: 188px;
 }
 
-.container-hero-image {
+.hero-image .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 1158px;
-  margin: 0 auto;
   max-width: 496px;
-  text-align: center;
-  margin: 0 auto;
-}
+  }
 
 .hero-image-title {
   max-width: 496px;
@@ -128,6 +123,7 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  padding: 0;
 }
 
 .hero-image-btn {
@@ -277,8 +273,11 @@ display: none;
   padding: 0 15px;
 }
 
-.logo-down {
+.container .logo-down {
   display: inline-block;
+}
+
+.logo-down {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
