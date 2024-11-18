@@ -161,11 +161,16 @@ img {
 }
 
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
+  position: absolute; 
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .future-list {
@@ -214,6 +219,10 @@ img {
 .content-mark-descr {
   padding: 32px 0;
   text-align: center;
+}
+
+.project-cards {
+  background-color: #FCFCFC;
 }
 
 .project-cards .container {
