@@ -161,17 +161,13 @@ img {
 }
 
 .visually-hidden {
-  border: 0; 
-  clip: rect(0 0 0 0); 
-  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
-  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
-  height: 1px; 
-  margin: -1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
   overflow: hidden;
-  padding: 0;
   position: absolute;
-  width: 1px;
   white-space: nowrap;
+  width: 1px;
 }
 
 .future-list {
@@ -188,12 +184,9 @@ img {
   background-color: #f4f4fd;
 }
 
-.container-cards {
+.cards .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 1158px;
-  margin: 0 auto;
 }
 
 .content {
@@ -206,9 +199,6 @@ img {
 .content-mark {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-}
-
-.wrapper {
   flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -268,17 +258,14 @@ img {
   padding-left: 0;
 }
 
-.container:last-child { 
-  display: flex;
+.down .container { 
+  display: inline-block;
   box-sizing: border-box;
   width: 1158px;
   margin: 0 auto;  
   padding: 0 15px;
 }
 
-.container .logo-down {
-  display: inline-block;
-}
 
 .logo-down {
   font-family: "Raleway", sans-serif;
